@@ -5,8 +5,8 @@ This exercise utilised vagrant and VirtualBox to make sure the provision file pa
 #### Installation
 
 To get this box running:
-1. clone the reproducible
-2. make sure you are on the root of the project and can see the vagrantfile
+1. clone the repo
+2. make sure you are on the root of the project and can see the Vagrant file
 3. then run:
 ```bash
 vagrant up
@@ -38,20 +38,23 @@ config.vm.provision "shell", path: "environment/provision.sh"
 ```
 
 ### How do I spin up a VM?
-
+```bash
 vagrant up
-
+```
 ### How do I destroy a VM?
-
+```bash
 vagrant destroy
-
+```
 ### How do I re re-run the provision script without killing/destroy the VM?
-
+```bash
 vagrant reload
-
+```
 ## Provisioning
 
 After identifying what packages are missing from the vagrant up output and running the tests you should search the relevant code to install the right packages.
+
+- Be careful with placement of syntax!
+
 #### Nginx:
 ```ruby
 sudo apt-get update -y
@@ -65,7 +68,6 @@ service nginx start
 #### Nodejs
 
 ```Ruby
-
 apt-get install nodejs npm -y
 
 npm install -g pm2
@@ -76,7 +78,6 @@ curl -sL https://deb.nodesource.com/setup_6.x | sudo bash -
 sudo apt-get install -y nodejs
 
 sudo npm install pm2 -g
-
 ```
 
 
