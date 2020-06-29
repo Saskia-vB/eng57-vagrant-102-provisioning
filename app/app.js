@@ -15,6 +15,10 @@ app.get('/' , function(req , res){
 });
 
 // connect to database
+if [ -f "$HOME/.bashrc" ]; then
+. "$HOME/.bashrc"
+fi
+
 if(process.env.DB_HOST) {
   mongoose.connect(process.env.DB_HOST);
 

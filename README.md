@@ -2,6 +2,12 @@
 
 This exercise utilised vagrant and VirtualBox to make sure the provision file passed all the tests.
 
+#### Pre-requisites
+- Vagrant
+- Virtual box
+- ruby
+- bundler
+
 #### Installation
 
 To get this box running:
@@ -15,6 +21,14 @@ vagrant up
 Now you can see nginx running on 2 locations:
 - ip: 192.168.10.100
 - development.local/
+
+#### Tests
+
+```bash
+cd starter-code/environment/spec-tests
+bundle install
+rake spec
+```
 
 ## Vagrantfile
 
