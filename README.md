@@ -10,6 +10,12 @@ This exercise utilised vagrant and VirtualBox to make sure the provision file pa
 
 #### Installation
 
+##### Pre-requisites:
+- install Vagrant
+- install VirtualBox
+- install Ruby
+- install Bundler
+
 To get this box running:
 1. clone the repo
 2. make sure you are on the root of the project and can see the Vagrant file
